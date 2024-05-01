@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: anurati;
+    src: url(../CSS/Anurati-Regular.otf);
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 60, 0.5), rgba(0, 0, 60, 0.5)), url("../IMG/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: anurati;
+    color: snow;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 60vh;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.246);
+}
+
+.container textarea {
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 19px;
+    color: snow;
+    width: 100%;
+    height: 80%;
+    resize: none;
+}
+
+.container .selection {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.selection select {
+    width: 60%;
+    padding: 12px;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-image: url(../IMG/down2.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 10px;
+
+}
+.selection button {
+    padding: 10px;
+    width: 180px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+button:hover{
+    background: #000;
+    color: snow;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .selection select {
+        width: 90%;
+    }
+}
