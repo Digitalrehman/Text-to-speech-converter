@@ -53,6 +53,9 @@ h1 {
     height: 80%;
     resize: none;
 }
+.container textarea::placeholder{
+    color : snow;
+
 
 .container .selection {
     height: 20%;
